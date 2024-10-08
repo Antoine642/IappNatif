@@ -8,17 +8,14 @@
 import SwiftUI
 
 struct ContentView: View {
-    var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+    var loot = ["Epée", "Bouclier", "Armure"]
 
+        var body: some View {
+            List(loot) { item in
+                Text(item)
+            }
+        }
+}
 #Preview {
     ContentView()
 }
